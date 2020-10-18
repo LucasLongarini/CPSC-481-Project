@@ -73,6 +73,26 @@ nav h6 {
     padding: 10px 3px;
 }
 
+.stage-content {
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0,0,0,.2);
+    border-radius: 8px;
+}
+
+.stage:hover  .stage-content{
+    display: block;
+}
+
+.stage:hover li {
+    font-weight: bold;
+}
+
+.stage-content a {
+    padding: 16px;
+}
+
 /* Top */
 
 .top {
