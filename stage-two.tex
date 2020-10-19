@@ -1,0 +1,532 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+
+\title{Team H Stage Two}
+\author{Lucas Longarini, Abel Tekeste, Josie Khampheng, \\
+Joel Poirier, Maiah Rutledge}
+\date{October 18, 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[toc,page]{appendix}
+\usepackage{url}
+\usepackage{hyperref}
+
+\renewcommand\familydefault{\sfdefault}
+\begin{document}
+
+\maketitle
+
+% Introduction
+\section{Introduction}
+\paragraph{} The project idea our team decided on is to design a Roommate Review app, wherein
+users can search for roommates and landlords based on their profiles on the app, which contain 
+information about these users, personality types, personal information, and reviews from other 
+users. The system will be used as a mobile phone application and can be downloaded by anyone, 
+though its intended use is by individuals who are renters or landlords. 
+\medskip
+\paragraph{} Overall, the system solves the problem of roommates and landlords often not knowing 
+much about each other prior to consenting to live together, and it solves this by helping all 
+stakeholders in a renter-landlord situation to have access to a much more detailed and diverse 
+source of information.
+\medskip
+\newline
+
+\section{Users \& Stakeholders}
+\begin{description}
+    \item[Renters (User \& Stakeholder):]
+    \newline \,
+    \begin{itemize}
+        \item Renters who are looking to gain information about potential roommates/landlords. 
+        These renters would essentially want to find the best possible match for a roommate or  
+        landlord by using the app and seeing how their personal preferences and personality traits
+        compare to those of other people on the app. This would be facilitated by the personality 
+        test that each user would have to use when starting the app. 
+        \item For renters that are already living with a roommate or have recently moved out and 
+        would like to rate their experience with them, this app can also be used to leave reviews 
+        of these roommates once the rental term ends so that they may advise future roommates of 
+        the person of what their experience was like, to overall increase the available 
+        information for these roommates. 
+        \item Renters must be able to use technology at least to the point where they can use the 
+        app proficiently. There is no need for them to have background knowledge on the app, but 
+        it would help to have some experience with it. 
+        \item Renters will complete a personality survey when they sign up for the app so that 
+        there is at least a little bit of information about them. 
+    \end{itemize}
+    
+    \item[Landlords (User \& Stakeholder):]
+    \newline \,
+    \begin{itemize}
+        \item Landlords who are looking to gain information about potential renters.  These 
+        landlords would essentially want to find the best possible match for a renter by using the 
+        app and seeing how each of their personal preferences and personality traits compare to 
+        those of other people on the app. This would be facilitated by the personality test that 
+        each user would have to use when starting the app. 
+        \item Landlords who would like to detail their experiences with past or current renters. 
+        The landlords would want to detail their experience with their current or past renters and 
+        also give them a rating. The app facilitates this by allowing them to fill out a review 
+        survey that would be visible to other people on their renter’s profile page.
+        \item Landlords must be able to use technology at least to the point where they can use the
+        app proficiently. It is not mandatory, but the landlords should understand the features of 
+        the app and have background knowledge on the app in order to help renters with any problems
+        they might encounter.
+        \item Landlords must complete a personality survey when they sign up for the app. 
+    \end{itemize}
+    
+    \item[Design Team (Stakeholder):]
+    \newline \,
+    \begin{itemize}
+        \item Responsible for designing the system, consulting users, and reporting to supervisors.
+    \end{itemize}
+    
+    \item[Supervisors (Stakeholder):]
+    \newline \,
+    \begin{itemize}
+        \item Responsible for ensuring the team stays on track and meets objectives through weekly 
+        meetings and periodic grade-based feedback.
+    \end{itemize}
+    
+\end{description}
+
+\\~\\
+% User Research Methods
+\section{User Research Methods}
+\subsection{Surveys \& Questionnaires}
+\begin{description}
+    \item[Justification:]
+        \newline \,
+        \begin{itemize}
+            \item Surveys are a quick way to obtain information from a large number of users  because 
+            they are easily accessible. It allows us to gain insight into our users' problems, and 
+            find suggestions for features we can implement. We also want their opinion on existing 
+            apps that solve similar issues.
+        \end{itemize}
+    \item [Summary:]
+        \newline \,
+        \begin{itemize}
+            \item  Most participants had their friends or family members as roommates. The vast 
+            majority of users valued someone who is clean and quiet. Many of the users also enjoyed 
+            having someone with a similar or compatible personality. Dirty, loud, and rude were the 
+            most common deal breaker for users. Not being respectful of personal space or privacy was 
+            another common deal breaker. When meeting a roommate for the first time, approximately 
+            82\% of participants preferred meeting in person.
+            \item Users had mixed opinions when asked if they would use an app similar to Tinder to 
+            find roommates. Users were more likely to use an app similar to Google Reviews to find 
+            roommates. Most users were concerned with bots and fake reviews in these apps.
+            \item When users were asked if they would take a personality test to help match them with 
+            roommates, approximately 82\% said yes. Profile page, reviews page and personality test 
+            were the features that users wanted most in our app. They wanted the ability to find and 
+            review landlords as well.
+        
+        \end{itemize}
+    \item [What went well:]
+    \newline \,
+        \begin{itemize}
+            \item There were a fair number of participants, which gave us a good amount of information.
+            \item The survey allowed us to better understand our users' problems.
+            \item Gave us possible features for our design, and problems with pre-existing designs.
+        \end{itemize}
+    \item [What went poorly:]
+    \newline \,
+        \begin{itemize}
+            \item Could not find as many users to take the survey as we had hoped, since most people our age 
+            are still living with their parents.
+        \end{itemize}
+    \item [What would you do differently:]
+    \newline \,
+        \begin{itemize}
+            \item Find more people to take the survey, and make the survey more general so people who are 
+            not currently renting can take it.
+        \end{itemize}
+\end{description}
+\begin{center}
+    \includegraphics[scale=0.09]{Surveys.jpg}
+\end{center}
+\begin{center}
+    \textit{Team member viewing survey results in a socially distanced environment.}
+\end{center}
+
+\subsection{Scenarios}
+\begin{description}
+    \item[Justification:]
+    \newline \,
+    \begin{itemize}
+        \item  Scenarios are a great way to think about varied specific user experiences. They can 
+        help designers to get a better perspective of what the user might experience using the 
+        system and helps them to think about how to address and accommodate for different user types 
+        and experiences among them.
+    \end{itemize}
+    
+    \item[Summary:]
+    \newline \,
+    \begin{itemize}
+        \item Thought about how app usage would look, such as from the perspective of a new renter 
+        looking for roommates and a landlord, a current renter looking to review their roommates and 
+        landlord, and a landlord looking to choose a new tenant.
+        \item Quickly found issues with our current vision of the app that we had not previously 
+        considered. An example of this was considering if one roommate wanted to leave a bad review 
+        of another, if they were in the middle of their lease it may create tensions and result in a 
+        negative experience. As a response to this Scenario, we decided that reviews for roommates 
+        should be left after the lease has ended, to avoid any conflicts.
+        \item As a response to this Scenario, we decided that reviews for roommates should be left 
+        after the lease has ended, to avoid any conflicts or biases.
+        \item Iterated on our app design to meet the needs of issues found through our Scenarios.
+    \end{itemize}
+    
+    \item[What went well:]
+    \newline \,
+    \begin{itemize}
+        \item Scenarios made it easy to view the app from the perspective of a user, rather than just 
+        thinking about it as designers. This helped us to quickly and easily think about the current 
+        pros and cons of our design to address issues within the design.
+        \item Allowed the team to empathize with the users which helped to inspire design changes in 
+        a much deeper way than would be done acting just on our existing ideas.
+    \end{itemize}
+    
+    \item[What went poorly:]
+    \newline \,
+    \begin{itemize}
+        \item Scenarios were limited by what we could think of in a brainstorming session. During the 
+        real usage of the app, there would likely be edge cases not previously considered.
+        \item Scenarios were limited due to user types of a renter and a landlord. 
+    \end{itemize}
+    
+    \item[What would you do differently:]
+    \newline \,
+    \begin{itemize}
+        \item To address limited scenarios, it would have been good to consider more how different 
+        demographics within those categories may use the app.
+    \end{itemize}
+\end{description}
+\\~\\
+\begin{center}
+    \includegraphics[scale=0.3]{Scenarios.jpg}
+\end{center}
+\begin{center}
+    \textit{The team members in a socially distanced meet-up discussing various Scenarios}
+\end{center}
+
+\subsection{Activity Analysis}
+\begin{description}
+    \item[Justification:]
+    \newline \,
+    \begin{itemize}
+        \item Activity analysis is a great way to analyze the activities involved in learning about a 
+        roommate/landlord. This method helped us analyze all the activities we could think of, which 
+        brought to light some unanticipated concerns and challenges. This method also helped us 
+        identify stakeholders and users to interview and tied nicely into the two previous methods.
+    \end{itemize}
+    
+    \item[Summary:]
+    \newline \,
+    \begin{itemize}
+        \item We started by thinking of ways people look for roommates, landlords, and tenants and the 
+        activities involved. This lead us to think about which attributes people want to learn about 
+        potential roommates and ways in which they discover this.
+        \item Brainstorming these ideas helped us discover areas that work and areas that could be 
+        improved. This gave us insight into potential solutions our app could provide for users.
+    \end{itemize}
+    
+    \item[What went well:]
+    \newline \,
+    \begin{itemize}
+        \item Brainstorming activities that potential users of our app go through today, helped think 
+        of possible solutions and “nice-to-haves”. This method brought to light a couple of concerns 
+        and needs that were unanticipated initially.
+        \item This also allowed the team to empathize with users of the app and think of more creative 
+        and deeper ideas that had not been discovered yet.    
+    \end{itemize}
+    
+    \item[What went poorly:]
+    \newline \,
+    \begin{itemize}
+        \item No team members involved in this method had the actual experience of looking for a 
+        roommate/landlord. This made it more challenging to think of every activity involved since we 
+        didn't have the same experience as our users.
+    \end{itemize}
+    
+    \item[What would you do differently:]
+    \newline \,
+    \begin{itemize}
+        \item It would have been better to use real users/stakeholders to help with this research 
+        method. Actual users would have been able to give us a better picture and reduce the risk of 
+        any false assumptions we may have made. 
+        \item Completing this researched method before the Surveys & Questionnaires method would help 
+        incorporate the results we discovered into the surveys
+    \end{itemize}
+\end{description}
+\\~\\
+\begin{center}
+    \includegraphics[scale=0.3]{ActivityAnalysis.jpg}
+\end{center}
+\begin{center}
+    \textit{Re-enactment of team member jotting down notes.}
+\end{center}
+
+% User Task Descriptions
+\newpage
+\section{User Task Descriptions}
+\begin{description}
+    \item[Must be included:]
+        \newline \,
+        \begin{itemize}
+            \item Roommates/landlords are able to rate and review each other
+            \item Users can search for potential roommates and landlords
+            \item Users have a public personal profile containing information about themselves
+            \item Users can take a personality test to help match them to similar roommates
+        \end{itemize}
+    \item[Important:]
+        \newline \,
+        \begin{itemize}
+            \item Users can message potential roommates
+            \item Users can create and join groups which contain members of the same household
+            \item Link landlords/roommates with a property address
+            \item Users can filter potential roommates and landlords by specific preferences or rating
+        \end{itemize}
+    \item[Could be included:]
+        \newline \,
+        \begin{itemize}
+            \item Each user has a friends list and can add other users as friends
+            \item Roommates can chat with landlords through the app
+            \item App can recommend potential matches automatically through similarities between users
+        \end{itemize}
+\end{description}
+
+\\~\\
+Online repository: \url{https://github.com/LucasLongarini/CPSC-481-Project}
+\newline
+Online portfolio: \url{https://lucaslongarini.github.io/CPSC-481-Project/index.html}
+
+% APPENDICES
+\newpage
+\appendix
+\begin{appendices}
+\section{Surveys \& Questionnaires}
+Survey can be viewed at \url{https://forms.gle/VhGEReZ57i6Y89E59}
+\begin{enumerate}
+    \item What is your relationship with past/current roommates before you moved in?
+    \begin{itemize}
+        \item Family: 3 (27.2\%)
+        \item Friends: 6 (54.4\%)
+        \item Acquaintance: 2 (18.2\%)
+        \item Stranger: 2 (18.2\%)
+        \item Significant other (18.2\%)
+    \end{itemize}
+
+    \medskip
+    \item{What do you look for in a roommate?}
+    \begin{itemize}
+        \item Clean, Friendly, Gender isn't relevant but it's nice being roommates with other queer 
+        people, similarish age/place in life, open minded to weird art projects/music/etc.
+        \item Someone who is clean, keeps the place quiet, friendly and respectful.
+        \item Clean and i should get along with them
+        \item attitude
+        \item Friendly, quiet and clean 
+        \item Clean, quiet
+        \item Willingness to compromise/Some cleanliness 
+        \item Clean, responsible, quiet at night
+        \item Clean and does not make a lot of noise. 
+        \item Similar schedules, respect privacy, someone I'm comfortable with
+        \item Cleanliness, willingness to split chores
+    \end{itemize}
+    
+    \medskip
+    \item{What are your deal breakers in a roommate?}
+        \begin{itemize}
+            \item If they absolutely ignore me as a human, they leave messes for a long time, party 
+            animals who are too loud and not respectful, racist/homophobic/rude
+            \item Messy, Loud, Rude, Respects personal space
+            \item Messy
+            \item personality 
+            \item Messy 
+            \item Dirty, loud (especially late at night), abrasive personality, likes small talk
+            \item Not respecting my property
+            \item Dirty, rude, loud
+            \item People that don't care about personal space. 
+            \item Cross boundaries, heavy smokers/drinkers, keep me up at night
+            \item Dirty, lazy
+        \end{itemize}
+    
+    \newpage
+    \item{When meeting a potential roommate, how do you prefer to communicate?}
+    \begin{itemize}
+        \item In person: 9 (81.8\%)
+        \item Text: 1 (9.1\%)
+        \item Video Call: 1 (9.1\%)
+    \end{itemize}
+    
+    \medskip
+    \item{Would you take a personality test to help match you with roommates?}
+    \begin{itemize}
+        \item Yes: 9 (81.8\%)
+        \item No: 1 (9.1\%)
+        \item Prefer to personally know my roommates prior to moving in: 1 (9.1\%)
+    \end{itemize}
+    
+    \medskip
+    \item{Consider dating apps like Tinder, Bumble, etc. How likely are you to use a similar app to 
+    find roommates?}
+    \begin{itemize}
+        \item 1: 1 (9.1\%)
+        \item 2: 3 (27.3\%)
+        \item 3: 2 (18.2\%)
+        \item 4: 3 (27.3\%)
+        \item 5: 2 (18.2\%)
+    \end{itemize}
+    
+    \medskip
+    \item{Consider review apps, like Google Reviews, Yelp, etc. How likely are you to use a similar app 
+    to review roommates?}
+    \begin{itemize}
+        \item 1: 1 (9.1\%)
+        \item 2: 0 (0\%)
+        \item 3: 4 (36.4\%)
+        \item 4: 4 (36.4\%)
+        \item 5: 2 (18.2\%)
+    \end{itemize}
+    
+    \medskip
+    \item{What do you like or dislike about these apps?}
+    \begin{itemize}
+        \item Google reviews can be biased based on peoples lived experiances so I don't hold too much 
+        stock. Dating app type could work, very niche but could work. I'd be worried it would be 
+        gamified for finding someone.
+        \item Apps like tinder, bumble, etc.. are simple to use and easy. Review apps are a bit more 
+        complicated with more information and usually a less pleasing UI
+        \item Idk
+        \item bots fake profiles
+        \item An app would be easy to talk to and meet people. Google reviews seem like mostly people 
+        complaining and fake reviews
+        \item Prevalence of bots
+        \item Dating apps let you make quick matches, so you can quickly find roommates. Review pages 
+        gives you an idea of what the person is like, but can be filled with fake reviews.
+        \item Reviews might be fake sometimes. 
+        \item I like that I can see the feedback of other users to give a general impression. I dislike 
+        that sometimes people can have different perspectives of the criteria for what is good and what 
+        is bad, so may rate more negatively/positively than I might.
+        \item Examples like tinder would be too impersonal
+    \end{itemize}
+    
+    \medskip
+    \item{Would you use this app to find/review landlords?}
+    \begin{itemize}
+        \item 1: 1 (9.1\%)
+        \item 2: 0 (0\%)
+        \item 3: 0 (0\%)
+        \item 4: 7 (63.6\%)
+        \item 5: 3 (27.3\%)
+    \end{itemize}
+    
+    \medskip
+    \item{What features would you like to see in this app?}
+    \begin{itemize}
+        \item Friends list: 1 (16.7\%)
+        \item Profile page: 6 (100\%)
+        \item Personality test: 5 (83.3\%)
+        \item Reviews page: 6 (100\%)
+        \item Household groups: 3 (50\%)
+        \item Messaging: 4 (66.7\%)
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+\section{Scenarios}
+\begin{itemize}
+    \item Roommate searching for other roommates (join/find)
+
+    \item Landlord looking for tenants
+   
+    \item Roommate(s) looking for landlord
+    
+    \item People reviewing you might not have been in same household and just randomly found you     
+    \newline $\rightarrow{}$ Need some verification between roommates
+        \newline $\rightarrow{}$ Rating only happens if all parties accept that they are in the same 
+        household
+        \newline $\rightarrow{}$Also verification should happen at start of moving in so that no bad 
+        blood prevents any user from verifying each other
+    
+    \item Leaving a bad rating for a roommate
+    \newline $\rightarrow{}$ Should happen after the term has ended to avoid tensions between roommates
+    
+    \item A user with bad reviews wants to delete the app and make a new account
+    \newline $\rightarrow{}$ Name and phone number should be tied to an account so that users can’t just 
+    keep making new accounts
+    
+    \item Users might get their friends to rate them positively
+    \newline $\rightarrow{}$ Hard to avoid this, even happens on Google Reviews
+    
+    \item Landlord may or may not be on app
+    \newline $\rightarrow{}$ Not necessary to confirm household for ratings, but if the landlord is on 
+    the app you can create house groups and messaging between users in the group
+\end{itemize}
+
+
+\newpage
+\section{Activity Analysis}
+\begin{itemize}
+    \item When searching for a roommate, other someone will:
+        \begin{itemize}
+            \item Post ads or ask friends/family to find someone
+            \begin{itemize}
+                \item Solution: Would be nice to have a place to look (like a job board)
+            \end{itemize}
+        \end{itemize}
+    \item To discover information about a potential roommate, someone will:
+        \begin{itemize}
+                \item Talk/meet the potential roommate
+                \item Ask others about that roommates personality
+                \begin{itemize}
+                    \item Solution: Would be nice to see others reviews/comments about the potential 
+                    roommate.
+                \end{itemize}
+        \end{itemize}
+    \item Types of information someone would want to learn about a roommate:
+        \begin{itemize}
+            \item Personality
+                \begin{itemize}
+                    \item Solution: Personality tests could help
+                \end{itemize}
+            \item Attributes
+                \begin{itemize}
+                    \item Solution: Clean/Rude rating metrics
+                    \item Solution: Clean/Messy rating metrics
+                    \item Solution: Loud/Quiet rating metrics
+                \end{itemize}
+        \end{itemize}
+    \item When searching for a landlord, someone will:
+        \begin{itemize}
+            \item Usually just contact the number of the property they are interested in
+        \end{itemize}
+    \item To discover information about a landlord, someone will:
+        \begin{itemize}
+            \item Find out by experience, meet them, or get information from a past tenet.
+            \begin{itemize}
+                \item Solution: Would be nice to see others reviews/comments about the potential landlord
+            \end{itemize}
+        \end{itemize}
+    \item Type of information someone would like to learn about a landlord:
+        \begin{itemize}
+            \item Attributes
+            \begin{itemize}
+                \item Solution: Friendly/Strict rating metrics
+                \item Solution: Communication rating metrics
+            \end{itemize}
+        \end{itemize}
+    \item Landlords looking for roommates will:
+        \begin{itemize}
+            \item Usually just reply to applications
+        \end{itemize}
+    \item How do landlords get information about potential tenants?
+        \begin{itemize}
+            \item Go off past experience/references
+            \begin{itemize}
+                \item Learn by experience
+                \item Solution: Would be nice to see the same reviews that roommates can see about people.
+            \end{itemize}
+        \end{itemize}
+\end{itemize}
+
+\end{appendices}
+\end{document}
